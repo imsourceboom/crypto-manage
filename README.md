@@ -1,1 +1,1 @@
-Modern Publisher
+Digital assets management
