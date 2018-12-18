@@ -1,13 +1,31 @@
 header {
-    position: sticky;
-    top: 0;
-    width: 18.75rem;
-    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-    box-shadow: 1px 0 18px 0 rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 18px 0 rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, 1);
+
+    @include media(laptop) {
+        & {
+            position: sticky;
+            top: 0;
+            width: 15.625rem;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include media(desktop) {
+        & {
+            width: 18.75rem;
+        }
+    }
 
     figure {
         width: 15rem;
@@ -21,12 +39,28 @@ header {
 
     nav {
         // @include centered;
+        width: 100%;
         text-align: center;
 
         ul {
+            display: flex;
+            justify-content: space-around;
+
+            @include media(laptop) {
+                & {
+                    justify-content: initial;
+                    flex-direction: column;
+                }
+            }
+
             li {
-                margin: 5rem 0;
+                @include media(laptop) {
+                    & {
+                        margin: 5rem 0;
+                    }
+                }
             }
         }
     }
+
 }

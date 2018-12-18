@@ -1,6 +1,11 @@
 main {
     position: relative;
-    flex: 1;
+
+    @include media(laptop) {
+        & {
+            flex: 1;
+        }
+    }
 
     h1 {
         @include centered;
