@@ -1,7 +1,7 @@
 {
-  "name": "modern-publisher",
+  "name": "crypto-manage",
   "version": "1.0.0",
-  "description": "modern tool for web publisher",
+  "description": "digital assets management",
   "main": "index.js",
   "author": "imsourceboom",
   "license": "MIT",
