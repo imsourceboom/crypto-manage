@@ -1,22 +1,14 @@
 main {
     position: relative;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
 
     @include media(laptop) {
         & {
             flex: 1;
+            padding-bottom: 0;
         }
     }
 
-    h1 {
-        @include centered;
-        font-family: 'Oswald';
-        font-weight: 500;
-        font-size: 70px;
-    }
-
-    div {
-        height: 450px;
-        background-color: blanchedalmond;
-        margin: 1rem;
-    }
 }

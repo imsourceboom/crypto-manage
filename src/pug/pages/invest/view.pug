@@ -1,0 +1,112 @@
+extends ../../_template
+
+block main
+    section.invest
+        include ../../components/invest-menu
+        article.view
+            .investor
+                .back
+                    // a Tag 삭제
+                    a(href="./invest.html")
+                        img(src="https://icongr.am/feather/arrow-left.svg?size=32&color=000000", alt="뒤로가기")
+                .name 
+                    span 임승범
+            .investment-info
+                ul
+                    .head
+                        .delete
+                            img(src="https://icongr.am/feather/trash-2.svg?size=24&color=e77f67", alt="삭제")
+                        .label 회원 투자정보
+                        a(href="./edit.html")
+                            .edit
+                                img(src="https://icongr.am/feather/edit.svg?size=24&color=778beb", alt="수정")
+                    li
+                        .title 투자형태
+                        .value 이더리움
+                    li
+                        .title 투자금 (현금)
+                        .value -
+                    li
+                        .title 투자금 (ETH)
+                        .value 777.7093
+                            span ETH
+                    li
+                        .title ETH 매수시세
+                        .value 427,000
+                            span 원
+                    li
+                        .title 수수료
+                        .value 333.2000
+                            span ETH
+                    li
+                        .title 실투자금
+                        .value 444.4900
+                            span ETH
+                    li
+                        .title 수령토큰
+                        .value 
+                            p 555,555.00
+                                span PKT
+                            em /
+                            p 555,555.00
+                                span PKT
+                            mark 관리내역
+                    li
+                        .title 호스트 수령토큰
+                        .value 999.9999
+                            span PKT
+                    li
+                        .title 비고
+                        .value 투자자의 특이사항을 메모합니다.
+                    li
+                        .title 입력일
+                        .value 2019-01-07 00:00:00
+                ul
+                    .head
+                        .delete
+                            img(src="https://icongr.am/feather/trash-2.svg?size=24&color=e77f67", alt="삭제")
+                        .label 회원 투자정보
+                        .edit
+                            img(src="https://icongr.am/feather/edit.svg?size=24&color=778beb", alt="수정")
+                    li
+                        .title 투자형태
+                        .value 현금
+                    li
+                        .title 투자금 (현금)
+                        .value 25,000,000
+                            span 원
+                    li
+                        .title 투자금 (ETH)
+                        .value 777.7093
+                            span ETH
+                    li
+                        .title ETH 매수시세
+                        .value 427,000
+                            span 원
+                    li
+                        .title 수수료
+                        .value 333.2000
+                            span ETH
+                    li
+                        .title 실투자금
+                        .value 444.4900
+                            span ETH
+                    li
+                        .title 수령토큰
+                        .value 
+                            p 555,555.00
+                                span PKT
+                            em /
+                            p 555,555.00
+                                span PKT
+                            mark 관리내역
+                    li
+                        .title 호스트 수령토큰
+                        .value 999.9999
+                            span PKT
+                    li
+                        .title 비고
+                        .value 투자자의 특이사항을 메모합니다. 투자자의 특이사항을 메모합니다.
+                    li
+                        .title 입력일
+                        .value 2019-01-07 00:00:00

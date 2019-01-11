@@ -1,0 +1,157 @@
+article.project--menu {
+    .for--mobile {
+        position: sticky;
+        top: 0;
+        height: 60px;
+        margin: 0 -1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+
+        .project {
+            @include centered;
+            @include flexCentered;
+            padding-left: 24px;
+
+            img.project-logo {
+                width: 35px;
+            }
+
+            span {
+                padding: 0 0.5rem;
+                margin-top: -5px;
+            }
+
+            img.arrow {
+                opacity: 0.6;
+            }
+        }
+
+        .box {
+            position: absolute;
+            width: 100%;
+            padding: 1rem 0;
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: 0.5s;
+            background-color: #fff;
+
+            &.on {
+                transform: scaleY(1);
+            }
+
+            .item {
+                width: 50%;
+                // height: 30px;
+                display: flex;
+                align-items: center;
+                padding: 0.7rem 0;
+                // background-color: rosybrown;
+
+                @include media(tablet) {
+                    & {
+                        width: 33%;
+                        padding-left: 3rem;
+                    }
+                }
+
+                img {
+                    width: 30px;
+                    margin: 0 1.35rem;
+                }
+
+                span {
+                    margin-top: -5px;
+                }
+            }
+        }
+
+        @include media(laptop) {
+            & {
+                display: none;
+            }
+        }
+    }
+
+    .for--pc {
+        display: none;
+
+        @include media(laptop) {
+            & {
+                display: block;
+                position: fixed;
+                top: 0;
+                right: 200px;
+                width: 90px;
+                height: 100vh;
+                overflow-y: scroll;
+                box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                animation: render 1s;
+
+                @keyframes render {
+                    from {
+                        transform: translateX(100%);
+                    }
+
+                    to {
+                        transform: translateX(0);
+                    }
+                }
+
+                ul {
+                    li {
+                        height: 80px;
+                        margin: 2rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        font-weight: 300;
+                        cursor: pointer;
+                        opacity: 0.3;
+                        transform: scale(0.75);
+                        transition: 0.5s;
+
+                        @include media(desktop) {
+                            & {
+                                transform: scale(0.95);
+                            }
+                        }
+
+                        &:hover {
+                            opacity: 1;
+                        }
+
+                        &.on {
+                            opacity: 1;
+                            font-weight: 400;
+                            transform: scale(0.85);
+
+                            @include media(desktop) {
+                                & {
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+
+                        img {
+                            display: block;
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include media(desktop) {
+            & {
+                width: 100px;
+                right: 300px;
+            }
+        }
+    }
+}

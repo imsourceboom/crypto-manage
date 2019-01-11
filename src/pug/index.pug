@@ -1,7 +1,30 @@
-extends ./_layout
+extends ./_template
 
 block main
-    h1 Modern Publisher !
-    div
-    div
-    div
+    section.search
+        form(method="" action="")
+            input(type="text" placeholder="검색 영역입니다.")
+        // 검색 후 결과물로 화면에 추가되는 article
+        article.members
+            .head
+                ul
+                    li 번호
+                    li 이름
+                    li 회원형태
+                    li 회원그룹
+                    li 비고
+            .body
+                // a Tag 삭제
+                a(href="./pages/search/selected.html")
+                    ul
+                        li 1
+                        li 임승범
+                        li 일반
+                        li 김창제
+                        li 
+                ul
+                    li 2
+                    li 김동범
+                    li admin
+                    li 박한일
+                    li 

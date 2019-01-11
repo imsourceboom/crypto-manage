@@ -126,8 +126,9 @@ gulp.task('js', [], function buildHTML() {
 });
 
 gulp.task('clean', function() {
-    del(['./dist/assets/**/*']);
-    del(['./dist/page/**/*']);
+    del(['./dist/css/**/*']);
+    del(['./dist/html/**/*']);
+    del(['./dist/js/**/*']);
 });
 
 /**

@@ -1,0 +1,108 @@
+extends ../../_template
+
+block main
+    section.invest
+        include ../../components/invest-menu
+        article.edit
+            .investor
+                .back
+                    // a Tag 삭제
+                    a(href="./view.html")
+                        img(src="https://icongr.am/feather/arrow-left.svg?size=32&color=000000", alt="뒤로가기")
+                .name 
+                    span 임승범
+            .investment-modify
+                //- ul.cash
+                    .head
+                        .label 회원 투자정보
+                        a(href="./view.html")
+                            .save
+                                img(src="https://icongr.am/feather/save.svg?size=24&color=1dd1a1" alt="저장" title="저장")
+                    li
+                        .title 투자형태
+                        .value 현금
+                    li
+                        .title 투자금 (현금)
+                        .value.input
+                            input(type="text")
+                            span 원
+                    li
+                        .title ETH 매수시세
+                        .value.input
+                            input(type="text")
+                            span 원
+                    li
+                        .title 투자금 (ETH)
+                        .value.input
+                            input(type="text" disabled value="1000")
+                            span.disabled ETH
+                    li
+                        .title 수수료율
+                        .value.input
+                            input(type="text")
+                            span %
+                    li
+                        .title 수수료
+                        .value 333.2000
+                            span ETH
+                    li
+                        .title 실투자금
+                        .value 444.4900
+                            span ETH
+                    li
+                        .title 수령토큰
+                        .value 
+                            p 555,555.00
+                                span PKT
+                            em /
+                            p 555,555.00
+                                span PKT
+                    li
+                        .title 비고
+                        .value.input
+                            input(type="text").note
+                    li
+                        .title 입력일
+                        .value 2019-01-07 00:00:00
+                ul.ether
+                    .head
+                        .label 회원 투자정보
+                        a(href="./view.html")
+                            .save
+                                img(src="https://icongr.am/feather/save.svg?size=24&color=1dd1a1" alt="저장" title="저장")
+                    li
+                        .title 투자형태
+                        .value 이더리움
+                    li
+                        .title 투자금 (ETH)
+                        .value.input
+                            input(type="text")
+                            span ETH
+                    li
+                        .title 수수료율
+                        .value.input
+                            input(type="text")
+                            span %
+                    li
+                        .title 수수료
+                        .value 333.2000
+                            span ETH
+                    li
+                        .title 실투자금
+                        .value 444.4900
+                            span ETH
+                    li
+                        .title 수령토큰
+                        .value 
+                            p 555,555.00
+                                span PKT
+                            em /
+                            p 555,555.00
+                                span PKT
+                    li
+                        .title 비고
+                        .value.input
+                            input(type="text").note
+                    li
+                        .title 입력일
+                        .value 2019-01-07 00:00:00

@@ -1,0 +1,123 @@
+extends ../../_template
+
+block main
+    section.search
+        form(method="" action="")
+            input(type="text" placeholder="검색 영역입니다.")
+        article.selected
+            .member--info
+                .comment
+                    | "<span>김창제</span>" 그룹의 [<span>일반</span>] 회원입니다.
+                .add
+                    .phone
+                        strong 휴대폰 번호
+                        span 010-8008-8095
+                    .account
+                        strong 계좌정보
+                        span 농협 1234123412341234
+            .invested--projects
+                figure.active
+                    img(src=`/assets/image/project/ambrosus.png`)
+                    figcaption ambrosus
+                -
+                    projects = [
+                        'paypie',
+                        'playkey',
+                        'qash',
+                        'telegram',
+                        //- 'ambrosus',
+                        //- 'paypie',
+                        //- 'playkey',
+                        //- 'qash',
+                        //- 'telegram',
+                    ]
+                each p in projects
+                    figure
+                        img(src=`/assets/image/project/${p}.png`)
+                        figcaption= p
+            .investment--info
+                ul
+                    li
+                        .title 투자형태
+                        .value 이더리움
+                    li
+                        .title 투자금 (현금)
+                        .value -
+                    li
+                        .title 투자금 (ETH)
+                        .value 777.7093
+                            span ETH
+                    li
+                        .title ETH 매수시세
+                        .value 427,000
+                            span 원
+                    li
+                        .title 수수료
+                        .value 333.2000
+                            span ETH
+                    li
+                        .title 실투자금
+                        .value 444.4900
+                            span ETH
+                    li
+                        .title 수령토큰
+                        .value 
+                            p 555,555.00
+                                span PKT
+                            em /
+                            p 555,555.00
+                                span PKT
+                            mark 관리내역
+                    li
+                        .title 호스트 수령토큰
+                        .value 999.9999
+                            span PKT
+                    li
+                        .title 비고
+                        .value 투자자의 특이사항을 메모합니다.
+                    li
+                        .title 수정일
+                        .value 2019-01-07 00:00:00
+                ul
+                    li
+                        .title 투자형태
+                        .value 이더리움
+                    li
+                        .title 투자금 (현금)
+                        .value 25,000,000
+                            span 원
+                    li
+                        .title 투자금 (ETH)
+                        .value 777.7093
+                            span ETH
+                    li
+                        .title ETH 매수시세
+                        .value 427,000
+                            span 원
+                    li
+                        .title 수수료
+                        .value 333.2000
+                            span ETH
+                    li
+                        .title 실투자금
+                        .value 444.4900
+                            span ETH
+                    li
+                        .title 수령토큰
+                        .value 
+                            p 555,555.00
+                                span PKT
+                            em /
+                            p 555,555.00
+                                span PKT
+                            mark 관리내역
+                    li
+                        .title 호스트 수령토큰
+                        .value 999.9999
+                            span PKT
+                    li
+                        .title 비고
+                        .value 투자자의 특이사항을 메모합니다. 투자자의 특이사항을 메모합니다.
+                    li
+                        .title 수정일
+                        .value 2019-01-07 00:00:00

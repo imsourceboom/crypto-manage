@@ -1,0 +1,69 @@
+extends ../../_template
+
+block main
+    section.invest
+        include ../../components/invest-menu
+        article.begin
+            .info
+                .item
+                    .key 총 투자금액
+                    .value 5,293.87 
+                        span ETH
+                .item
+                    .key 수령토큰 (1ETH)
+                    .value 1,3000 
+                        span AMB
+                .item
+                    .key 수수료율
+                    .value 10 
+                        span %
+                .item
+                    .key 이더리움 매수시세
+                    .value 314,000 
+                        span 원
+            form.filter(method="" action="")
+                .search
+                    select
+                        option(disabled selected) 선택
+                        -   var filter = ['이름', '회원그룹']
+                        each f in filter
+                            option= f
+                    input(type="text").mobile
+                    input(type="text").pc
+                    button(type="submit") 검색
+                button(type="button")
+                    a(href="./register.html") 투자자 등록
+            .list
+                .head
+                    ul
+                        - let head = ['번호', '이름', '회원형태', '회원그룹', '실투자금', '수령토큰', '호스트 수령토큰']
+                        each h in head
+                            li= h
+                .body
+                    // a Tag 삭제
+                    a(href="./view.html")
+                        ul
+                            li 1
+                            li 페이지
+                            li 이동
+                            li Link
+                            li 999.9999 ETH
+                            li 777,777.00 AMB
+                            li 88,000.00
+                    - for (let i = 2; i <= 15; i++)
+                        ul
+                            li= i
+                            - let body = ['임승범', '일반', '김창제', '212.8543 ETH', '756,123.00 QASH', '42,000.00']
+                            each b in body
+                                li= b
+                .footer
+                    ul
+                        li
+                            a(href="#") Prev
+                        li.page.active
+                            a(href="#") 1
+                        - for (let i = 2; i <= 5; i++)
+                            li.page
+                                a(href="#")= i
+                        li
+                            a(href="#") Next

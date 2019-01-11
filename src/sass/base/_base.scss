@@ -10,11 +10,12 @@ html {
 
 body {
     min-height: 100vh;
-    color: rgba(0, 0, 0, 0.84);
+    color: rgba(0, 0, 0, 0.74);
 
     @include media(laptop) {
         & {
             display: flex;
+            flex-direction: row-reverse;
         }
     }
 }
@@ -37,19 +38,19 @@ input {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: rgba(112, 112, 112, 0.4);
         opacity: 1;
-        font-size: .85rem;
+        font-size: .95rem;
         /* Firefox */
     }
 
     &:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: rgba(112, 112, 112, 0.4);
-        font-size: .85rem;
+        font-size: .95rem;
     }
 
     &::-ms-input-placeholder {
         /* Microsoft Edge */
         color: rgba(112, 112, 112, 0.4);
-        font-size: .85rem;
+        font-size: .95rem;
     }
 }

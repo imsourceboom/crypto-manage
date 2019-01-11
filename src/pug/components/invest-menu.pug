@@ -1,0 +1,38 @@
+article.project--menu
+    .for--mobile
+        .project
+            img.project-logo(src="/assets/image/project/ambrosus.png", alt="")
+            span ambrosus
+            img.arrow(src="/assets/svg/icon/chevron-down.svg", alt="")
+        .box
+            -
+                var mProject = [
+                    'ambrosus',
+                    'playkey',
+                    'paypie',
+                    'liquid',
+                    'windingtree',
+                    'telegram',
+                ]
+            each m in mProject
+                .item
+                    img(src=`/assets/image/project/${m}.png`)
+                    span= m
+    .for--pc
+        ul
+            li.on
+                img(src="/assets/image/project/ambrosus.png", alt="")
+                span ambrosus
+            -
+                var project = [
+                    //- 'ambrosus',
+                    'playkey',
+                    'paypie',
+                    'liquid',
+                    'windingtree',
+                    'telegram',
+                ]
+            each p in project
+                li
+                    img(src=`/assets/image/project/${p}.png`)
+                    span= p
