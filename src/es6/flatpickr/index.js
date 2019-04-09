@@ -13,5 +13,5 @@ const inputDate = flatpic.input;
 
 flatpickr(inputDate, {
     'locale': Korean,
-    // disableMobile: "true"
+    disableMobile: "true"
 });
