@@ -14,6 +14,18 @@ section.invest {
     }
 
     // @import '../components/invest-menu';
+    article.begin,
+    article.view,
+    article.edit,
+    article.register,
+    article.history {
+        @media (max-width: 1023px) {
+            & {
+
+                padding-top: 60px;
+            }
+        }
+    }
 
     .investor {
         position: relative;
@@ -996,6 +1008,18 @@ section.invest {
 
 
                                 &.history-record {
+
+                                    li.date {
+                                        label {
+                                            input.datepic {
+                                                @include media(mobile-only) {
+                                                    & {
+                                                        padding: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
 
                                     li.amount-container {
                                         padding: 0 1rem;
