@@ -1,0 +1,67 @@
+extends ../../_template
+
+block main
+    section.invest
+        include ../../components/invest-menu
+        article.history
+            .investor
+                .back
+                    // a Tag 삭제
+                    a(href="./invest.html")
+                        img(src="https://icongr.am/feather/arrow-left.svg?size=32&color=000000", alt="뒤로가기")
+                .name 
+                    span 임승범
+            .investment--history
+                .history--container
+                    .detail--box
+                        .head
+                            ul
+                                li 일자
+                                li 처리
+                                li 수량
+                                li 비고
+                        .body
+                            .record
+                                ul.history-record
+                                    li
+                                        label
+                                            input.datepic.text-center(type="text" placeholder="Date")
+                                    li
+                                        select
+                                            option(selected disabled) 항목
+                                            option(value="1") 매도
+                                            option(value="2") 배부
+                                    li.amount-container
+                                        label.amount-box
+                                            input(type="text")
+                                            span AMB
+                                    li.remark
+                                        label
+                                            input(type="text")
+                            button.history-add(type='button') 내역추가
+                            .total
+                                ul
+                                    li 총 수령토큰
+                                    li
+                                        label
+                                            input(disabled value="1234")
+                                            span AMB
+                                ul
+                                    li 총 매도토큰
+                                    li
+                                        label
+                                            input(disabled value="1234")
+                                            span AMB
+                                ul
+                                    li 총 배부토큰
+                                    li
+                                        label
+                                            input(disabled value="1234")
+                                            span AMB
+                                ul
+                                    li 프로젝트팀 보유토큰
+                                    li
+                                        label
+                                            input(disabled value="1234")
+                                            span AMB
+                    

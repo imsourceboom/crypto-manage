@@ -20,6 +20,14 @@ const elements = {
     }
 };
 
+export const flatpic = {
+    input: Array.from(doc.querySelectorAll('input.datepic'))
+}
+
+export const investHistory = {
+    addButton: doc.querySelector('.history-add')
+}
+
 export default elements;
 
 console.log('Webpack On!!');

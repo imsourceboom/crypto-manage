@@ -13,7 +13,7 @@ section.invest {
         }
     }
 
-    @import '../components/invest-menu';
+    // @import '../components/invest-menu';
 
     .investor {
         position: relative;
@@ -181,6 +181,7 @@ section.invest {
                 input.pc {
                     margin: 0 .5rem;
                     display: none;
+                    cursor: initial;
 
                     @include media(tablet) {
                         & {
@@ -896,5 +897,288 @@ section.invest {
         }
     }
 
+    article.history {
+        .investment--history {
+            @include media(desktop) {
+                & {
+                    padding-bottom: 5rem;
+                }
+            }
 
+            .history--container {
+                width: 100%;
+                border: 1px solid black;
+                // padding: 0.7rem 0;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                border-radius: 10px;
+                // line-height: 1.5;
+                overflow: hidden;
+                transition: 0.5s;
+
+                &:hover {
+                    box-shadow: 1px 1px 18px 0 rgba(0, 0, 0, 0.1);
+                }
+
+                .detail--box {
+
+                    .head,
+                    .body {
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            align-items: center;
+                            min-height: 55px;
+                            text-align: center;
+
+                            li {
+                                padding: 0.5rem 0;
+                            }
+
+                            li:first-child {
+                                width: 40%;
+                            }
+
+                            li:nth-child(2) {
+                                width: 20%;
+                            }
+
+                            li:nth-child(3) {
+                                width: 40%;
+                            }
+
+                            li:last-child {
+                                width: 100%;
+                                padding: 0.5rem 1rem;
+                            }
+
+                            @include media(tablet) {
+                                & {
+                                    flex-wrap: nowrap;
+
+                                    li:first-child {
+                                        flex: 4;
+                                    }
+
+                                    li:nth-child(2) {
+                                        flex: 2;
+                                    }
+
+                                    li:nth-child(3) {
+                                        flex: 4;
+                                    }
+
+                                    li:last-child {
+                                        flex: 8;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .head {
+                        position: relative;
+                        font-weight: bold;
+                        background-color: rgb(245, 245, 245);
+                    }
+
+                    .body {
+                        .record {
+                            ul {
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+                                li:nth-child(3) {
+                                    span {
+                                        padding-left: 0.3rem;
+                                    }
+                                }
+
+
+
+                                &.history-record {
+
+                                    li.amount-container {
+                                        padding: 0 1rem;
+                                        position: relative;
+
+                                        label.amount-box {
+                                            width: 100%;
+                                            min-height: 36px;
+                                            max-height: 36px;
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 0;
+                                            padding-right: .3rem;
+                                            border: 1px solid rgba(0, 0, 0, .3);
+                                            border-radius: 4px;
+                                            overflow: hidden;
+
+                                            input {
+                                                width: 100%;
+                                                min-height: 36px;
+                                                max-height: 36px;
+                                                border: 0;
+                                                padding: 0 .3rem;
+                                                text-align: right;
+
+                                                &:focus+span {
+                                                    opacity: 1;
+                                                }
+                                            }
+
+                                            span {
+                                                padding: 0;
+                                                opacity: .4;
+                                                transition: .5s;
+                                                font-size: 14px;
+                                            }
+
+                                            @include media(tablet) {
+                                                & {
+                                                    padding: 0;
+                                                    padding-right: 1rem;
+
+                                                    input {
+                                                        padding: 0 1rem;
+                                                    }
+
+                                                    span {
+                                                        font-size: 16px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    li.remark {
+
+                                        @include media(tablet) {
+                                            & {
+                                                padding-left: 0;
+                                            }
+                                        }
+
+                                        label {
+                                            padding: 0;
+                                        }
+                                    }
+
+                                    label {
+                                        display: block;
+                                        width: 100%;
+                                        padding: 0 1rem;
+
+                                        input,
+                                        input.datepic {
+                                            width: 100%;
+                                            min-height: 36px;
+                                            border: 1px solid rgba(0, 0, 0, .3);
+                                            border-radius: 4px;
+                                            padding: 0 1rem;
+                                        }
+                                    }
+
+                                    select {
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        -ms-appearance: none;
+                                        -o-appearance: none;
+                                        background: url('https://icongr.am/feather/chevron-down.svg?size=18&color=595959') no-repeat 95% 50%;
+                                        background-color: #ffffff;
+                                        font-size: 1rem;
+                                        margin: 0;
+                                        width: 100%;
+                                        min-height: 36px;
+                                        max-height: 36px;
+                                        border: 1px solid rgba(0, 0, 0, .3);
+                                        border-radius: 4px;
+                                        padding: 0 .5rem;
+                                        cursor: pointer;
+
+                                        @include media(tablet) {
+                                            & {
+                                                padding: 0 1rem;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        button.history-add {
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            -ms-appearance: none;
+                            -o-appearance: none;
+                            display: block;
+                            margin: 2rem auto;
+                            background-color: #fff;
+                            border: 0px solid rgba(0, 0, 0, .3);
+                            border-radius: 4px;
+                            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .1);
+                            width: 150px;
+                            height: 36px;
+                            cursor: pointer;
+                            font-size: .9rem;
+                            -webkit-tap-highlight-color: transparent;
+                            color: rgba(0, 0, 0, .45);
+                            transition: .5s;
+
+                            &:hover {
+                                color: rgba(0, 0, 0, .85);
+                                box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+                            }
+
+                            &:active {
+                                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .1);
+                                color: rgba(0, 0, 0, .85);
+                            }
+                        }
+
+                        .total {
+                            ul {
+                                border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+                                li {
+                                    flex: 1;
+
+                                    label {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: flex-end;
+
+                                        input {
+                                            width: 100px;
+                                            border: none;
+                                            border-bottom: 1px solid rgba(0, 0, 0, .1);
+                                            text-align: center;
+                                            padding: .3rem 0;
+
+                                            @include media(tablet) {
+                                                & {
+                                                    width: 150px;
+                                                }
+                                            }
+                                        }
+
+                                        span {
+                                            padding-bottom: .5rem;
+                                            padding-left: 0.3rem;
+                                        }
+                                    }
+                                }
+
+                                li:first-child {
+                                    color: #c9bbaf;
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

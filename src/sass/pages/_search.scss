@@ -86,7 +86,6 @@ section.search {
                 text-align: center;
                 padding: 1rem 0;
 
-
                 @include media(tablet) {
                     margin: 1rem 0;
                 }
@@ -160,7 +159,7 @@ section.search {
                     }
                 }
 
-                &>div {
+                & > div {
                     margin: 1rem 2rem 0;
 
                     strong {
@@ -275,6 +274,147 @@ section.search {
 
                             &:hover {
                                 color: rgba(0, 0, 0, 0.7);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .investment--history {
+            @include media(desktop) {
+                & {
+                    padding-bottom: 5rem;
+                }
+            }
+
+            .history--container {
+                width: 100%;
+                border: 1px solid black;
+                // padding: 0.7rem 0;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                border-radius: 10px;
+                // line-height: 1.5;
+                overflow: hidden;
+                transition: 0.5s;
+
+                &:hover {
+                    box-shadow: 1px 1px 18px 0 rgba(0, 0, 0, 0.1);
+                }
+
+                .detail--box {
+                    .head,
+                    .body {
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            align-items: center;
+                            min-height: 55px;
+                            text-align: center;
+
+                            li {
+                                padding: 0.5rem 0;
+                            }
+
+                            li:first-child {
+                                width: 40%;
+                            }
+
+                            li:nth-child(2) {
+                                width: 20%;
+                            }
+
+                            li:nth-child(3) {
+                                width: 40%;
+                            }
+
+                            li:last-child {
+                                width: 100%;
+                                padding: 0.5rem 1rem;
+                            }
+
+                            @include media(tablet) {
+                                & {
+                                    flex-wrap: nowrap;
+
+                                    li:first-child {
+                                        flex: 4;
+                                    }
+
+                                    li:nth-child(2) {
+                                        flex: 2;
+                                    }
+
+                                    li:nth-child(3) {
+                                        flex: 4;
+                                    }
+
+                                    li:last-child {
+                                        flex: 8;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .head {
+                        position: relative;
+                        font-weight: bold;
+                        background-color: rgb(245, 245, 245);
+
+                        figure {
+                            @include centeredY();
+                            left: 0.5rem;
+                            opacity: 0.7;
+                            cursor: pointer;
+
+                            @include media(tablet) {
+                                & {
+                                    left: 1rem;
+                                }
+                            }
+
+                            img {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .body {
+                        .record {
+                            ul {
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+                                li:nth-child(3) {
+                                    span {
+                                        padding-left: 0.3rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        hr {
+                            width: 50%;
+                            max-width: 300px;
+                            margin: 2rem auto;
+                        }
+
+                        .total {
+                            ul {
+                                border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+                                li {
+                                    flex: 1;
+
+                                    span {
+                                        padding-left: 0.3rem;
+                                    }
+                                }
+
+                                li:first-child {
+                                    color: #c9bbaf;
+                                }
                             }
                         }
                     }

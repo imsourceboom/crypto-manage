@@ -52,94 +52,89 @@
             </ul>
           </div>
         </article>
-        <article class="register">
+        <article class="history">
           <div class="investor">
             <div class="back">
               <!-- a Tag 삭제--><a href="./invest.html"><img src="https://icongr.am/feather/arrow-left.svg?size=32&amp;color=000000" alt="뒤로가기"></a>
             </div>
-            <div class="name"> 
-              <input type="text" placeholder="투자 등록하실 회원을 검색하세요.">
-            </div>
+            <div class="name"> <span>임승범</span></div>
           </div>
-          <div class="members">
-            <div class="head">
-              <ul>
-                <li>번호</li>
-                <li>이름</li>
-                <li>회원형태</li>
-                <li>회원그룹</li>
-                <li>비고</li>
-              </ul>
-            </div>
-            <div class="body">
-              <ul>
-                <li>1</li>
-                <li>임승범</li>
-                <li>일반</li>
-                <li>김창제</li>
-                <li>대전</li>
-              </ul>
-              <ul>
-                <li>2</li>
-                <li>박한일</li>
-                <li>호스트</li>
-                <li>admin           </li>
-                <li>엄마친구</li>
-              </ul>
-            </div>
-          </div>
-          <div class="registration">
-            <ul class="ether">
-              <div class="head">
-                <div class="label">회원 투자정보</div><a href="./view.html">
-                  <div class="save"><img src="https://icongr.am/feather/save.svg?size=24&amp;color=1dd1a1" alt="저장" title="저장"></div></a>
+          <div class="investment--history">
+            <div class="history--container">
+              <div class="detail--box">
+                <div class="head">
+                  <ul>
+                    <li>일자</li>
+                    <li>처리</li>
+                    <li>수량</li>
+                    <li>비고</li>
+                  </ul>
+                </div>
+                <div class="body">
+                  <div class="record">
+                    <ul class="history-record">
+                      <li>
+                        <label>
+                          <input class="datepic text-center" type="text" placeholder="Date">
+                        </label>
+                      </li>
+                      <li>
+                        <select>
+                          <option selected disabled>항목</option>
+                          <option value="1">매도</option>
+                          <option value="2">배부</option>
+                        </select>
+                      </li>
+                      <li class="amount-container">
+                        <label class="amount-box">
+                          <input type="text"><span>AMB</span>
+                        </label>
+                      </li>
+                      <li class="remark">
+                        <label>
+                          <input type="text">
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="history-add" type="button">내역추가</button>
+                  <div class="total">
+                    <ul>
+                      <li>총 수령토큰</li>
+                      <li>
+                        <label>
+                          <input disabled value="1234"><span>AMB</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>총 매도토큰</li>
+                      <li>
+                        <label>
+                          <input disabled value="1234"><span>AMB</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>총 배부토큰</li>
+                      <li>
+                        <label>
+                          <input disabled value="1234"><span>AMB</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>프로젝트팀 보유토큰</li>
+                      <li>
+                        <label>
+                          <input disabled value="1234"><span>AMB</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <li>
-                <div class="title">이름</div>
-                <div class="value"> </div>
-              </li>
-              <li>
-                <div class="title">투자형태</div>
-                <div class="value">이더리움</div>
-              </li>
-              <li>
-                <div class="title">투자금 (ETH)</div>
-                <div class="value input">
-                  <input type="text"><span>ETH</span>
-                </div>
-              </li>
-              <li>
-                <div class="title">수수료율</div>
-                <div class="value input">
-                  <input type="text"><span>%</span>
-                </div>
-              </li>
-              <li>
-                <div class="title">수수료</div>
-                <div class="value">333.2000<span>ETH</span></div>
-              </li>
-              <li>
-                <div class="title">실투자금</div>
-                <div class="value">444.4900<span>ETH</span></div>
-              </li>
-              <li>
-                <div class="title">수령토큰</div>
-                <div class="value"> 
-                  <p>555,555.00<span>PKT</span></p><em>/</em>
-                  <p>555,555.00<span>PKT</span></p>
-                </div>
-              </li>
-              <li>
-                <div class="title">비고</div>
-                <div class="value input">
-                  <input class="note" type="text">
-                </div>
-              </li>
-              <li>
-                <div class="title">입력일</div>
-                <div class="value">2019-01-07 00:00:00</div>
-              </li>
-            </ul>
+            </div>
           </div>
         </article>
       </section>

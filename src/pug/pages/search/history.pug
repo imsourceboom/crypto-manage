@@ -1,0 +1,105 @@
+extends ../../_template
+
+block main
+    section.search
+        form(method="" action="")
+            input(type="text" placeholder="검색 영역입니다.")
+        article.selected
+            .member--info
+                .comment
+                    | "<span>김창제</span>" 그룹의 [<span>일반</span>] 회원입니다.
+                .add
+                    .phone
+                        strong 휴대폰 번호
+                        span 010-8008-8095
+                    .account
+                        strong 계좌정보
+                        span 농협 1234123412341234
+            .invested--projects
+                figure.active
+                    img(src=`/assets/image/project/ambrosus.png`)
+                    figcaption ambrosus
+                -
+                    projects = [
+                        'paypie',
+                        'playkey',
+                        'qash',
+                        'telegram',
+                        //- 'ambrosus',
+                        //- 'paypie',
+                        //- 'playkey',
+                        //- 'qash',
+                        //- 'telegram',
+                    ]
+                each p in projects
+                    figure
+                        img(src=`/assets/image/project/${p}.png`)
+                        figcaption= p
+            .investment--history
+                .history--container
+                    .detail--box
+                        .head
+                            figure(onClick="window.history.back()")
+                                img(src="https://icongr.am/feather/arrow-left.svg?size=28&color=595959", alt="")
+                            ul
+                                li 일자
+                                li 처리
+                                li 수량
+                                li 비고
+                        .body
+                            .record
+                                ul
+                                    li 2019-04-03
+                                    li 매도
+                                    li 25000
+                                        span AMB
+                                    li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사
+                                ul
+                                    li 2019-04-03
+                                    li 매도
+                                    li 25000
+                                        span AMB
+                                    li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사
+                                ul
+                                    li 2019-04-03
+                                    li 매도
+                                    li 25000
+                                        span AMB
+                                    li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사
+                                ul
+                                    li 2019-04-03
+                                    li 매도
+                                    li 25000
+                                        span AMB
+                                    li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사
+                                ul
+                                    li 2019-04-03
+                                    li 매도
+                                    li 25000
+                                        span AMB
+                                    li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사
+                                ul
+                                    li 2019-04-03
+                                    li 매도
+                                    li 25000
+                                        span AMB
+                                    li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사
+                            hr
+                            .total
+                                ul
+                                    li 총 수령토큰
+                                    li 1234
+                                        span AMB
+                                ul
+                                    li 총 매도토큰
+                                    li 1234
+                                        span AMB
+                                ul
+                                    li 총 배부토큰
+                                    li 1234
+                                        span AMB
+                                ul
+                                    li 프로젝트팀 보유토큰
+                                    li 12341234
+                                        span AMB
+                    

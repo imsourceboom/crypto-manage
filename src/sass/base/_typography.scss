@@ -7,4 +7,8 @@ body {
         size: 16px;
         family: 'Noto Sans KR', 'Oswald', sans-serif;
     }
+
+    @include media(mobile-only) {
+        font-size: 15px;
+    }
 }
