@@ -1,0 +1,51 @@
+extends ../../_template
+
+block main
+    section.member
+        article.begin
+            form.filter(method="" action="")
+                .search
+                    select
+                        option(disabled selected) 선택
+                        -   var filter = ['이름', '회원그룹']
+                        each f in filter
+                            option= f
+                    input(type="text").mobile
+                    input(type="text").pc
+                    button(type="submit") 검색
+                button(type="button")
+                    a(href="./register.html") 회원 등록
+            .list
+                .head
+                    ul
+                        - let head = ['번호', '이름', '회원형태', '회원그룹', '휴대폰번호', '비고', '가입일']
+                        each h in head
+                            li= h
+                .body
+                    // a Tag 삭제
+                    a(href="./view.html")
+                        ul
+                            li 1
+                            li 페이지
+                            li 이동
+                            li Link
+                            li 999.9999 ETH
+                            li 777,777.00 AMB
+                            li 88,000.00
+                    - for (let i = 2; i <= 15; i++)
+                        ul
+                            li= i
+                            - let body = ['임승범', '일반', '김창제', '212.8543 ETH', '756,123.00 QASH', '42,000.00']
+                            each b in body
+                                li= b
+                .footer
+                    ul
+                        li
+                            a(href="#") Prev
+                        li.page.active
+                            a(href="#") 1
+                        - for (let i = 2; i <= 5; i++)
+                            li.page
+                                a(href="#")= i
+                        li
+                            a(href="#") Next

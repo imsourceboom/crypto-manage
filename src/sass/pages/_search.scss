@@ -1,5 +1,5 @@
 section.search {
-    @include sectionDefault;
+    @include sectionDefault();
 
     input {
         &::placeholder {
@@ -159,7 +159,7 @@ section.search {
                     }
                 }
 
-                & > div {
+                &>div {
                     margin: 1rem 2rem 0;
 
                     strong {
@@ -303,6 +303,7 @@ section.search {
                 }
 
                 .detail--box {
+
                     .head,
                     .body {
                         ul {
