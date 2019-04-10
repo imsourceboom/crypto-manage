@@ -24,19 +24,27 @@ const thirdLi = (x) => {
 }
 const fourthLi = (x) => {
     let li = document.createElement('li');
-    li.innerText = '동해물과 백두산이 마르고 닳도록 하느님이 보우하사';
+    li.innerText = '동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세';
     x.appendChild(li);
+}
+const fifth = (x) => {
+    let div = document.createElement('div');
+    let span = document.createElement('span');
+    div.className = 'delete-container';
+    x.appendChild(div).appendChild(span);
 }
 
 function historyAdd() {
     const container = this.parentElement.children[0];
-    const record = document.querySelector('.history-record');
+    const record = document.querySelector('.record-input');
     const ul = document.createElement('ul');
+    ul.className = 'recorded';
     firstLi(ul);
     secondLi(ul);
     thirdLi(ul);
     fourthLi(ul);
-    record.before(ul);
+    fifth(ul);
+    record.parentNode.insertBefore(ul, record);
 }
 
 if (button !== null) {

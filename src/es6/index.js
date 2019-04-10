@@ -1,3 +1,4 @@
+// import './polyfill';
 import './elements';
 import './header';
 import './invest';
