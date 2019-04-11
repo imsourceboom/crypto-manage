@@ -1,0 +1,59 @@
+extends ../../_template
+
+block main
+    section.member
+        article.register   
+            .registration
+                ul.ether
+                    .head
+                        figure(onClick="window.history.back()")
+                            img(src="https://icongr.am/feather/arrow-left.svg?size=28&color=595959", alt="")
+                        .label 회원 등록
+                        a(href="./view.html")
+                            .save
+                                img(src="https://icongr.am/feather/save.svg?size=24&color=1dd1a1" alt="저장" title="저장")
+                    li
+                        .title 이름
+                        .value.input
+                            input(type="text").note
+                    li
+                        .title 회원형태
+                        .value.input
+                            select
+                                option(selected disabled) 선택
+                                option(value="1") 일반
+                                option(value="1") 호스트
+                    li
+                        .title 회원그룹
+                        .value.input
+                            select
+                                option(selected disabled) 선택
+                                option 김창제
+                                option 박한일
+                    li
+                        .title 휴대폰번호
+                        .value.input.phone-box
+                            select
+                                option 010
+                                option 011
+                                option 016
+                                option 018
+                                option 019
+                            input(type="text").note
+                            input(type="text").note
+                    li
+                        .title 계좌정보 
+                        .value.input.bank-box 
+                            select
+                                option(selected disabled) 선택
+                                option 농협
+                                option 국민
+                                option 신한
+                            input(type="text").note
+                    li
+                        .title 비고
+                        .value.input 
+                            input(type="text").note
+                    li
+                        .title 가입일
+                        .value 2019-01-07 

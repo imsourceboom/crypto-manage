@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detaction" content="telephone=no, address=no, email=no">
+    <meta name="referrer" content="strict-origin">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+    <title>Crypto Manage</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script scossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&amp;rum=true" async defer></script>
+    <script src="/js/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- li Tag 안에 있는 a Tag 삭제-->
+        <ul>
+          <li class="on"><a href="/index.html">검색</a></li>
+          <li><a href="/html/member/member.html">회원관리</a></li>
+          <li><a href="/html/invest/invest.html">투자관리</a></li>
+          <li><a href="/html/config/config.html">설정</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="member">
+        <article class="register">  
+          <div class="registration">
+            <ul class="ether">
+              <div class="head">
+                <figure onClick="window.history.back()"><img src="https://icongr.am/feather/arrow-left.svg?size=28&amp;color=595959" alt=""></figure>
+                <div class="label">회원 등록</div><a href="./view.html">
+                  <div class="save"><img src="https://icongr.am/feather/save.svg?size=24&amp;color=1dd1a1" alt="저장" title="저장"></div></a>
+              </div>
+              <li>
+                <div class="title">이름</div>
+                <div class="value input">
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li>
+                <div class="title">회원형태</div>
+                <div class="value input">
+                  <select>
+                    <option selected disabled>선택</option>
+                    <option value="1">일반</option>
+                    <option value="1">호스트</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div class="title">회원그룹</div>
+                <div class="value input">
+                  <select>
+                    <option selected disabled>선택</option>
+                    <option>김창제</option>
+                    <option>박한일</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div class="title">휴대폰번호</div>
+                <div class="value input phone-box">
+                  <select>
+                    <option>010</option>
+                    <option>011</option>
+                    <option>016</option>
+                    <option>018</option>
+                    <option>019</option>
+                  </select>
+                  <input class="note" type="text">
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li>
+                <div class="title">계좌정보 </div>
+                <div class="value input bank-box"> 
+                  <select>
+                    <option selected disabled>선택</option>
+                    <option>농협</option>
+                    <option>국민</option>
+                    <option>신한</option>
+                  </select>
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li>
+                <div class="title">비고</div>
+                <div class="value input"> 
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li>
+                <div class="title">가입일</div>
+                <div class="value">2019-01-07 </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

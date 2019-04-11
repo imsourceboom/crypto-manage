@@ -7,7 +7,7 @@ block main
                 .search
                     select
                         option(disabled selected) 선택
-                        -   var filter = ['이름', '회원그룹']
+                        -   var filter = ['이름', '회원그룹', '휴대폰번호']
                         each f in filter
                             option= f
                     input(type="text").mobile
@@ -29,13 +29,13 @@ block main
                             li 페이지
                             li 이동
                             li Link
-                            li 999.9999 ETH
-                            li 777,777.00 AMB
-                            li 88,000.00
+                            li 010-8008-8095
+                            li 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 
+                            li 2019-04-11
                     - for (let i = 2; i <= 15; i++)
                         ul
                             li= i
-                            - let body = ['임승범', '일반', '김창제', '212.8543 ETH', '756,123.00 QASH', '42,000.00']
+                            - let body = ['임승범', '일반', '김창제', '010-1234-1234', '나는 자랑스런 태극기 앞에 조국과 민족의 무궁한', '2019-00-00']
                             each b in body
                                 li= b
                 .footer
