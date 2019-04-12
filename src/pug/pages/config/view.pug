@@ -1,0 +1,50 @@
+extends ../../_template
+
+block main
+    section.config
+        article.view
+            .investment-info
+                ul
+                    .head
+                        figure(onClick="window.history.back()")
+                            img(src="https://icongr.am/feather/arrow-left.svg?size=28&color=595959", alt="")
+                        .label 토큰 정보
+                        .delete
+                            img(src="https://icongr.am/feather/trash-2.svg?size=24&color=e77f67", alt="삭제")
+                        .edit
+                            a(href="./register.html")
+                                img(src="https://icongr.am/feather/edit.svg?size=24&color=778beb", alt="수정")
+                    li
+                        .title 토큰명
+                            span (영문)
+                        .value AMBROSUS
+                    li
+                        .title 토큰명
+                            span (국문)
+                        .value 앰브로서스
+                    li
+                        .title 토큰약어
+                        .value AMB
+                    li
+                        .title 수령토큰
+                            span (1ETH)
+                        .value 99999999
+                    li
+                        .title 일반ICO
+                            span (1ETH)
+                        .value 9999999999
+                    li
+                        .title 수수료율
+                        .value 10%
+                    li
+                        .title ETH 매수시세
+                        .value 1,000,000,000원
+                    li
+                        .title 총 투자금액
+                        .value 12341234 ETH
+                    li
+                        .title 진행상황
+                        .value 진행중
+                    li
+                        .title 비고
+                        .value 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세

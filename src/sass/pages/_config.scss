@@ -1,3 +1,11 @@
 section.config {
     @include sectionDefault();
+
+    @import 'member/begin',
+    'member/register',
+    'member/view';
+
+    @import 'config/begin',
+    'config/register',
+    'config/view';
 }

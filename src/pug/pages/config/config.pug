@@ -2,3 +2,50 @@ extends ../../_template
 
 block main
     section.config
+        article.begin
+            form.filter(method="" action="")
+                //- .search
+                //-     select
+                //-         option(disabled selected) 선택
+                //-         -   var filter = ['이름', '회원그룹', '휴대폰번호']
+                //-         each f in filter
+                //-             option= f
+                //-     input(type="text").mobile
+                //-     input(type="text").pc
+                //-     button(type="submit") 검색
+                button(type="button")
+                    a(href="./register.html") 토큰 등록
+            .list
+                .head
+                    ul
+                        - let head = ['번호', '토큰명', '총투자금액', '수령토큰(1ETH)', '프로젝트진행', '진행상황']
+                        each h in head
+                            li= h
+                .body
+                    // a Tag 삭제
+                    a(href="./view.html")
+                        ul
+                            li 1
+                            li.name AMBROSUS
+                                span (앰브로서스)
+                            li 5,293.87
+                            li 1,300 AMB
+                            li 2017-09
+                            li 마감 
+                    //- - for (let i = 2; i <= 15; i++)
+                    //-     ul
+                    //-         li= i
+                    //-         - let body = ['TELEGRAM (텔레그램)', '9999.99', '9,999 TON', '2017-09', '마감']
+                    //-         each b in body
+                    //-             li= b
+                .footer
+                    ul
+                        li
+                            a(href="#") Prev
+                        li.page.active
+                            a(href="#") 1
+                        - for (let i = 2; i <= 5; i++)
+                            li.page
+                                a(href="#")= i
+                        li
+                            a(href="#") Next

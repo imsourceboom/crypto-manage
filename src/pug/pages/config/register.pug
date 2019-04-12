@@ -1,0 +1,68 @@
+extends ../../_template
+
+block main
+    section.config
+        article.register   
+            .registration
+                ul
+                    .head
+                        figure(onClick="window.history.back()")
+                            img(src="https://icongr.am/feather/arrow-left.svg?size=28&color=595959", alt="")
+                        .label 토큰 등록
+                        a(href="./view.html")
+                            .save
+                                img(src="https://icongr.am/feather/save.svg?size=24&color=1dd1a1" alt="저장" title="저장")
+                    li.en-name
+                        .title 토큰명 
+                            span (영문)
+                        .value.input
+                            input(type="text").note
+                    li.kr-name
+                        .title 토큰명 
+                            span (국문)
+                        .value.input
+                            input(type="text").note
+                    li
+                        .title 토큰약어
+                        .value.input
+                            input(type="text").note
+                    li.receive
+                        .title 수령토큰 
+                            span (1ETH)
+                        .value.input
+                            input(type="text").note
+                    li.offering
+                        .title 일반ICO 
+                            span (1ETH)
+                        .value.input
+                            input(type="text").note
+                    li
+                        .title 수수료율
+                        .value.input
+                            input(type="text")
+                            span %
+                    li
+                        .title ETH 매수시세
+                        .value.input
+                            input(type="text")
+                            span 원
+                    li.invest-amount
+                        .title 총 투자금액
+                        .value.input
+                            select
+                                option(selected disabled) 항목
+                                option ETH
+                                option BTC
+                            input(type="text").note
+                    li
+                        .title 진행상황
+                        .value.input
+                            select
+                                option(selected disabled) 선택
+                                option(value="1") 진행중
+                                option(value="1") 완료
+                    li
+                        .title 비고
+                        .value.input 
+                            input(type="text").note
+

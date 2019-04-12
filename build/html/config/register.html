@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detaction" content="telephone=no, address=no, email=no">
+    <meta name="referrer" content="strict-origin">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+    <title>Crypto Manage</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script scossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&amp;rum=true" async defer></script>
+    <script src="/js/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- li Tag 안에 있는 a Tag 삭제-->
+        <ul>
+          <li class="on"><a href="/index.html">검색</a></li>
+          <li><a href="/html/member/member.html">회원관리</a></li>
+          <li><a href="/html/invest/invest.html">투자관리</a></li>
+          <li><a href="/html/config/config.html">설정</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="config">
+        <article class="register">  
+          <div class="registration">
+            <ul>
+              <div class="head">
+                <figure onClick="window.history.back()"><img src="https://icongr.am/feather/arrow-left.svg?size=28&amp;color=595959" alt=""></figure>
+                <div class="label">토큰 등록</div><a href="./view.html">
+                  <div class="save"><img src="https://icongr.am/feather/save.svg?size=24&amp;color=1dd1a1" alt="저장" title="저장"></div></a>
+              </div>
+              <li class="en-name">
+                <div class="title">토큰명 <span>(영문)</span></div>
+                <div class="value input">
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li class="kr-name">
+                <div class="title">토큰명 <span>(국문)</span></div>
+                <div class="value input">
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li>
+                <div class="title">토큰약어</div>
+                <div class="value input">
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li class="receive">
+                <div class="title">수령토큰 <span>(1ETH)</span></div>
+                <div class="value input">
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li class="offering">
+                <div class="title">일반ICO <span>(1ETH)</span></div>
+                <div class="value input">
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li>
+                <div class="title">수수료율</div>
+                <div class="value input">
+                  <input type="text"><span>%</span>
+                </div>
+              </li>
+              <li>
+                <div class="title">ETH 매수시세</div>
+                <div class="value input">
+                  <input type="text"><span>원</span>
+                </div>
+              </li>
+              <li class="invest-amount">
+                <div class="title">총 투자금액</div>
+                <div class="value input">
+                  <select>
+                    <option selected disabled>항목</option>
+                    <option>ETH</option>
+                    <option>BTC</option>
+                  </select>
+                  <input class="note" type="text">
+                </div>
+              </li>
+              <li>
+                <div class="title">진행상황</div>
+                <div class="value input">
+                  <select>
+                    <option selected disabled>선택</option>
+                    <option value="1">진행중</option>
+                    <option value="1">완료</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div class="title">비고</div>
+                <div class="value input"> 
+                  <input class="note" type="text">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

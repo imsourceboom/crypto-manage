@@ -1,0 +1,33 @@
+article.register {
+    .registration {
+        width: 100%;
+
+        ul {
+
+            li {
+                .title {
+                    span {
+                        font-size: .8rem;
+                        opacity: .5;
+                    }
+                }
+            }
+
+            li.invest-amount {
+                .value {
+                    display: flex;
+
+                    select {
+                        flex: 1;
+                    }
+
+                    input {
+                        flex: 2.2;
+                        margin: 0;
+                        margin-left: .3rem;
+                    }
+                }
+            }
+        }
+    }
+}

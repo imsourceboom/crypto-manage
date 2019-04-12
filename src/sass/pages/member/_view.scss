@@ -26,10 +26,28 @@ article.view {
             }
 
             .head {
+                position: relative;
                 display: flex;
                 background-color: #f5f6fa;
                 padding: 1rem;
                 margin-top: -.7rem;
+
+                figure {
+                    @include centeredY();
+                    left: 0.5rem;
+                    opacity: 0.7;
+                    cursor: pointer;
+
+                    @include media(tablet) {
+                        & {
+                            left: 1rem;
+                        }
+                    }
+
+                    img {
+                        display: block;
+                    }
+                }
 
                 .label {
                     flex: 1;
@@ -38,14 +56,27 @@ article.view {
                     font-weight: 500;
                 }
 
-                img {
-                    opacity: .3;
-                    transition: .3s;
+                .delete,
+                .edit {
+                    position: absolute;
 
-                    &:hover {
-                        opacity: .7;
-                        cursor: pointer;
+                    img {
+                        opacity: .3;
+                        transition: .3s;
+
+                        &:hover {
+                            opacity: .7;
+                            cursor: pointer;
+                        }
                     }
+                }
+
+                .delete {
+                    right: 4rem;
+                }
+
+                .edit {
+                    right: 1.5rem;
                 }
             }
 

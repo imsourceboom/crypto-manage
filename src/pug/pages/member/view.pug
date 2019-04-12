@@ -6,11 +6,13 @@ block main
             .investment-info
                 ul
                     .head
+                        figure(onClick="window.history.back()")
+                            img(src="https://icongr.am/feather/arrow-left.svg?size=28&color=595959", alt="")
+                        .label 회원 정보
                         .delete
                             img(src="https://icongr.am/feather/trash-2.svg?size=24&color=e77f67", alt="삭제")
-                        .label 회원 정보
-                        a(href="./register.html")
-                            .edit
+                        .edit
+                            a(href="./register.html")
                                 img(src="https://icongr.am/feather/edit.svg?size=24&color=778beb", alt="수정")
                     li
                         .title 이름
