@@ -15,9 +15,13 @@ article.members {
                 margin: 1rem 0;
             }
 
-            li:first-child {
-                flex: 1;
-                display: none;
+            // li:first-child {
+            //     flex: 1;
+            //     display: none;
+            // }
+
+            li:nth-child(1) {
+                flex: 2;
             }
 
             li:nth-child(2) {
@@ -28,21 +32,17 @@ article.members {
                 flex: 2;
             }
 
-            li:nth-child(4) {
-                flex: 2;
-            }
-
             li:last-child {
                 flex: 2;
             }
 
-            @include media(tablet) {
-                & {
-                    li:first-child {
-                        display: block;
-                    }
-                }
-            }
+            // @include media(tablet) {
+            //     & {
+            //         li:first-child {
+            //             display: block;
+            //         }
+            //     }
+            // }
         }
     }
 
